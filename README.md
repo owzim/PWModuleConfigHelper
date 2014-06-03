@@ -32,7 +32,7 @@ protected static $defaultConfig = array(
         // optional, defaults to 'InputfieldRadios'
         'inputfieldType' => 'InputfieldRadios',
 
-        // each key is for the form label, each value will be saved if selected
+        // each key is for the input label, each value will be saved if selected
         'options' => array(
             'Option 1' => 1,
             'Option 2' => 2,
