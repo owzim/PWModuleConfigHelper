@@ -40,8 +40,8 @@ protected static $defaultConfig = array(
         ),
 
         // set any additional attribute to the input field
-        "attributes" => array(
-            "optionColumns" => 1
+        'attributes' => array(
+            'optionColumns' => 1
         )
     )
 );
@@ -74,6 +74,17 @@ public static function getPWModuleConfigInputfields(array $data) {
 ```php
 $this->awesomeSetting;
 ```
+
+### Stuff to be aware of
+
+If you're using this in your module and you don't want it to clash with other modules using it, you have the following options to include it:
+
+1. use ```spl_autoload_register``` to autoload it, so it only gets loaded once
+2. only include the class if it has not been loaded yet, via ```class_exists('PWModuleConfigHelper')```
+3. Option 1 and 2 require the class not to change (updates etc.) so the following options are more stable:
+4. Namespace to class via renaming it, prefixing it with you module's name
+5. Namespace it with PHP namespaces
+6. I could make a module out of this but this might be overkill
 
 ### Version history
 
