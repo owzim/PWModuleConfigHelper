@@ -65,7 +65,7 @@ public static function getPWModuleConfigInputfields(array $data) {
 
 #### Result:
 
-![screenshot](http://i.imgur.com/gaxRce8.png)
+![screenshot](http://i.imgur.com/QMjCVgh.png)
 
 
 
