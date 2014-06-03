@@ -51,7 +51,7 @@ protected static $defaultConfig = array(
 
 ```php
 public function __construct() {
-    PWModuleConfigHelper::apply($this, $defaultConfig);
+    PWModuleConfigHelper::apply($this, self::$defaultConfig);
 }
 ```
 
