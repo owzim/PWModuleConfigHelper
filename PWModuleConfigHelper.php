@@ -45,12 +45,12 @@ class PWModuleConfigHelper {
             $label = isset($valueData->label) ? $valueData->label : $key;
 
             if (isset($valueData->options)) {
-                $inputFieldType = isset($valueData->inputFieldtype) ? $valueData->inputFieldtype : self::DEFAULT_OPTIONS_FIELDTYPE;
+                $inputfieldType = isset($valueData->inputFieldtype) ? $valueData->inputFieldtype : self::DEFAULT_OPTIONS_FIELDTYPE;
             } else {
-                $inputFieldType = isset($valueData->inputFieldtype) ? $valueData->inputFieldtype : self::DEFAULT_FIELDTYPE;
+                $inputfieldType = isset($valueData->inputFieldtype) ? $valueData->inputFieldtype : self::DEFAULT_FIELDTYPE;
             }
 
-            $f = $modules->get($inputFieldType);
+            $f = $modules->get($inputfieldType);
             $f->name = $key;
             $f->label = $label;
 

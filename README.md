@@ -17,7 +17,7 @@ protected static $defaultConfig = array(
         'value' => 'I am pretty',
 
         // optional, defaults to 'InputfieldText'
-        'inputFieldType' => 'InputfieldText',
+        'inputfieldType' => 'InputfieldText',
 
         // set any additional attribute to the input field
         "attributes" => array(
@@ -35,7 +35,7 @@ protected static $defaultConfig = array(
         'value' => 2,
 
         // optional, defaults to 'InputfieldRadios'
-        'inputFieldType' => 'InputfieldRadios',
+        'inputfieldType' => 'InputfieldRadios',
 
         // each key is for the form label, each value will be saved if selected
         'options' => array(
