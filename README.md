@@ -17,12 +17,7 @@ protected static $defaultConfig = array(
         'value' => 'I am pretty',
 
         // optional, defaults to 'InputfieldText'
-        'inputfieldType' => 'InputfieldText',
-
-        // set any additional attribute to the input field
-        "attributes" => array(
-            "optionColumns" => 1
-        )
+        'inputfieldType' => 'InputfieldText'
     ),
 
     // example with multiple options
