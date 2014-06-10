@@ -31,6 +31,7 @@ class PWModuleConfigHelper {
         $config = (object) $config; // cast to object, because it's prettier to acces keys
 
         foreach ($config as $key => $valueData) {
+            $valueData = (object) $valueData; // cast to object, because it's prettier to acces keys
             if(!isset($data->$key)) {
                 $data->$key = $valueData->value;
             }
